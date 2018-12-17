@@ -1,5 +1,5 @@
-name: DiscordWebhooks
-antigen: VectorNetworkProject\DiscordWebhooks
+name: Discord
+antigen: Discord\Webhooks
 description: A simple Discord webhook client library.
 version: 0.0.1
 authors:

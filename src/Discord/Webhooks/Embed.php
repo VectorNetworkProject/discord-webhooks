@@ -1,6 +1,6 @@
 <?php
 
-namespace DiscordWebhooks;
+namespace Discord\Webhooks;
 
 /**
  * Embed is an embed object to be included in a webhook message

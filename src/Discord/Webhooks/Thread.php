@@ -6,7 +6,7 @@
  * Time: 14:08
  */
 
-namespace DiscordWebhooks;
+namespace Discord\Webhooks;
 
 
 class Thread extends \Thread

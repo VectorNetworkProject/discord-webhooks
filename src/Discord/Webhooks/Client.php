@@ -1,6 +1,6 @@
 <?php
 
-namespace DiscordWebhooks;
+namespace Discord\Webhooks;
 
 /**
  * Client generates the payload and sends the webhook payload to Discord
