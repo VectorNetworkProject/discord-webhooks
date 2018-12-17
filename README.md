@@ -18,15 +18,15 @@ You can either copy the PHP file directly into your project or _preferable_ just
 It is fairly easy to use. I'll throw in an example.
 
 ```php
-use \DiscordWebhooks\Client;
-use \DiscordWebhooks\Embed;
+use Discord\Webhooks\Client;
+use Discord\Webhooks\Embed;
 
 $webhook = new Client('DISCORD_WEBHOOK_URL');
 $embed = new Embed();
 
-$embed->description('This is an embed');
+$embed->setDescription('This is an embed');
 
-$webhook->username('Bot')->message('Hello, Human!')->embed($embed)->send();
+$webhook->setUsername('Bot')->setMessage('Hello, Human!')->setEmbed($embed)->sendContent();
 ```
 
 ## License
