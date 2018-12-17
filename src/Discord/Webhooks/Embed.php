@@ -26,7 +26,7 @@ class Embed
      * @param string $url
      * @return Embed
      */
-    public function title(string $title, string $url = ''): self
+    public function setTitle(string $title, string $url = ''): self
     {
         $this->title = $title;
         $this->url = $url;
@@ -38,7 +38,7 @@ class Embed
      * @param string $description
      * @return Embed
      */
-    public function description(string $description): self
+    public function setDescription(string $description): self
     {
         $this->description = $description;
 
@@ -49,7 +49,7 @@ class Embed
      * @param $timestamp
      * @return Embed
      */
-    public function timestamp($timestamp): self
+    public function setTimestamp($timestamp): self
     {
         $this->timestamp = $timestamp;
 
@@ -60,7 +60,7 @@ class Embed
      * @param int|string $color
      * @return Embed
      */
-    public function color($color): self
+    public function setColor($color): self
     {
         $this->color = is_int($color) ? $color : hexdec($color);
 
@@ -71,7 +71,7 @@ class Embed
      * @param string $url
      * @return Embed
      */
-    public function url(string $url): self
+    public function setUrl(string $url): self
     {
         $this->url = $url;
 
@@ -83,7 +83,7 @@ class Embed
      * @param string $icon_url
      * @return $this
      */
-    public function footer(string $text, string $icon_url = ''): self
+    public function setFooter(string $text, string $icon_url = ''): self
     {
         $this->footer = [
             'text' => $text,
@@ -96,7 +96,7 @@ class Embed
      * @param string $url
      * @return Embed
      */
-    public function image(string $url): self
+    public function setImage(string $url): self
     {
         $this->image = [
             'url' => $url,
@@ -108,7 +108,7 @@ class Embed
      * @param string $url
      * @return Embed
      */
-    public function thumbnail(string $url): self
+    public function setThumbnail(string $url): self
     {
         $this->thumbnail = [
             'url' => $url,
@@ -122,7 +122,7 @@ class Embed
      * @param string $icon_url
      * @return Embed
      */
-    public function author(string $name, string $url = '', string $icon_url = ''): self
+    public function setAuthor(string $name, string $url = '', string $icon_url = ''): self
     {
         $this->author = [
             'name' => $name,
@@ -138,7 +138,7 @@ class Embed
      * @param bool $inline
      * @return $this
      */
-    public function field(string $name, string $value, bool $inline = false): self
+    public function addField(string $name, string $value, bool $inline = false): self
     {
         $this->fields[] = [
             'name' => $name,

@@ -27,7 +27,7 @@ class Client
      * @param bool $tts
      * @return Client
      */
-    public function tts(bool $tts = false): self
+    public function setTTS(bool $tts = false): self
     {
         $this->tts = $tts;
         return $this;
@@ -37,7 +37,7 @@ class Client
      * @param string $username
      * @return Client
      */
-    public function username(string $username): self
+    public function setUsername(string $username): self
     {
         $this->username = $username;
         return $this;
@@ -47,7 +47,7 @@ class Client
      * @param string $new_avatar
      * @return Client
      */
-    public function avatar(string $new_avatar): self
+    public function setAvatar(string $new_avatar): self
     {
         $this->avatar = $new_avatar;
         return $this;
@@ -57,7 +57,7 @@ class Client
      * @param string $new_message
      * @return Client
      */
-    public function message(string $new_message): self
+    public function setMessage(string $new_message): self
     {
         $this->message = $new_message;
         return $this;
@@ -67,13 +67,13 @@ class Client
      * @param Embed $embed
      * @return $this
      */
-    public function embed(Embed $embed): self
+    public function setEmbed(Embed $embed): self
     {
         $this->embeds[] = $embed->toArray();
         return $this;
     }
 
-    public function send(): void
+    public function sendContent(): void
     {
         $payload = json_encode(array(
             'username' => $this->username,
