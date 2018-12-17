@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/VectorNetworkProject/discord-webhooks
+branches:
+- master
+projects:
+  discord-webhooks:
+    path: ""
+    model: virion
+    type: library
+...
