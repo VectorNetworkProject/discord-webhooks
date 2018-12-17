@@ -7,15 +7,21 @@
         {
             "name": "Kayla Thompson",
             "email": "jmp@const.ninja"
+        },
+        {
+            "name": "InkoHX",
+            "email": "inkohx@gmail.com"
         }
     ],
     "require": {
         "ext-curl": "*",
-        "php": ">=5.4"
+        "php": ">=7.2",
+        "ext-json": "*",
+        "ext-pthreads": ">=3.1.7dev"
     },
     "autoload": {
         "psr-4": {
-            "DiscordWebhooks\\": "DiscordWebhooks/"
+            "": ["src"]
         }
     }
 }

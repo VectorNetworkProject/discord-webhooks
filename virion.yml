@@ -1,0 +1,9 @@
+name: DiscordWebhooks
+antigen: VectorNetworkProject\DiscordWebhooks
+description: A simple Discord webhook client library.
+version: 0.0.1
+authors:
+  - Kayla Thompson
+  - InkoHX
+php:
+  - 7.2
